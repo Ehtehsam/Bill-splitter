@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> AMOUNT CALCULATOR</head>
+<hr></hr>
+</head>
+<style>
+.header{
+  text-align: center;
+}  
+.design{
+  background-color:yellow;
+  width:100px;
+
+
+
+} 
+
+}
+</style>
+<body style= "background-color:#43A6C6"; class= "header">
+Enter bill amount!
+<br></br>
+<form>
+<input type="text" id="total bill" /><br>
+<p>How many peoples are sharing the bill</p>
+<input type="text" id="no of persons" /><br>
+<input type="button" class="design"; onClick="divide()" Value="split" />
+</form>
+<p>contribution per person : <br>
+<span id = "result"></span>
+</p>
+
+<script>
+function divide() 
+{ 
+        a = document.getElementById("total bill").value;
+        b = document.getElementById("no of persons").value;
+document.getElementById("result").innerHTML = a/ b;
+}
+</script>
+</body>
+</html>
+
